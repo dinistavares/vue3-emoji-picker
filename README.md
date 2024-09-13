@@ -54,25 +54,26 @@ function onSelectEmoji(emoji) {
 
 ## Options (`props`)
 
-| Prop                       | Type    | Default Value | Description                                                                                 |
-| :------------------------- | :------ | :------------ | :------------------------------------------------------------------------------------------ |
-| native                     | Boolean | false         | Load native emoji instead of image.                                                         |
-| hide-search                | Boolean | false          | Show/hide search input.                                                                     |
-| hide-group-icons           | Boolean | false         | Show/hide header group icons.                                                               |
-| hide-group-names           | Boolean | false         | Show/hide group names.                                                                      |
-| disable-sticky-group-names | Boolean | false         | Disable sticky for group names                                                              |
-| disable-skin-tones         | Boolean | false         | Disable skin tones.                                                                         |
-| disabled-groups            | Array   | []            | Disable any group/category. See [Available groups](#available-groups)                       |
-| group-names                | Object  | {}            | Change any group name. See [Default group names](#default-group-names)                      |
-| static-texts               | Object  | Object        | See [static-texts](#propsstatic-texts) table                                                |
-| pickerType                 | string  | ''            | Choose picker type, possible options: `input`, `textarea` (Popup with input/textarea), `''` |
-| mode                       | string  | 'insert'      | Choose insert mode, possible options: `prepend`, `insert`, `append`                         |
-| offset                     | Number  | '6'           | Choose emoji popup offset                                                                   |
-| additional-groups          | Object  | {}            | Add additional customized groups, keys are the group names translated from snake_case       |
-| group-order                | Array   | []            | Override ordering of groups                                                                 |
-| group-icons                | Object  | {}            | Override group icons by passing svg's on keys                                               |
-| display-recent             | Boolean | false         | Display Recently used emojis                                                                |
-| theme                      | String  | 'light'       | Available options, 'light', 'dark', and 'auto'                                              |
+| Prop                       | Type    | Default Value | Description                                                                                          |
+| :------------------------- | :------ | :------------ | :--------------------------------------------------------------------------------------------------- |
+| native                     | Boolean | false         | Load native emoji instead of image.                                                                  |
+| hide-search                | Boolean | false         | Show/hide search input.                                                                              |
+| hide-group-icons           | Boolean | false         | Show/hide header group icons.                                                                        |
+| hide-group-names           | Boolean | false         | Show/hide group names.                                                                               |
+| disable-sticky-group-names | Boolean | false         | Disable sticky for group names                                                                       |
+| disable-skin-tones         | Boolean | false         | Disable skin tones.                                                                                  |
+| disabled-emojis            | Array   | []            | Disable any emoji by unicode. See `src/data/emojis.json` for all emojis (eg.`1f601` for grin emoji). |
+| disabled-groups            | Array   | []            | Disable any group/category. See [Available groups](#available-groups)                                |
+| group-names                | Object  | {}            | Change any group name. See [Default group names](#default-group-names)                               |
+| static-texts               | Object  | Object        | See [static-texts](#propsstatic-texts) table                                                         |
+| pickerType                 | string  | ''            | Choose picker type, possible options: `input`, `textarea` (Popup with input/textarea), `''`          |
+| mode                       | string  | 'insert'      | Choose insert mode, possible options: `prepend`, `insert`, `append`                                  |
+| offset                     | Number  | '6'           | Choose emoji popup offset                                                                            |
+| additional-groups          | Object  | {}            | Add additional customized groups, keys are the group names translated from snake_case                |
+| group-order                | Array   | []            | Override ordering of groups                                                                          |
+| group-icons                | Object  | {}            | Override group icons by passing svg's on keys                                                        |
+| display-recent             | Boolean | false         | Display Recently used emojis                                                                         |
+| theme                      | String  | 'light'       | Available options, 'light', 'dark', and 'auto'                                                       |
 
 ## Static text option (`props['static-texts']`)
 
